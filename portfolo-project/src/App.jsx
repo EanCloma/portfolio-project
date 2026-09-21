@@ -1,120 +1,80 @@
-import { useState } from 'react'
 import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+      {/* ACTIVITY 1: INTRODUCE YOURSELF */}
+      <section id="home" className="hero-section">
+        <img
+          src={heroImg}
+          className="profile-photo"
+          alt="Meryanne Junn B. Cloma"
+        />
+
+        <div className="hero-content">
+          <p className="greeting">Hello! I am</p>
+
+          <h1>Meryanne Junn B. Cloma</h1>
+
+          <p className="introduction">
+            I am an Information Systems student who enjoys learning about
+            technology, web development, and system design.
           </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
 
-      <div className="ticks"></div>
+          <p className="tagline">
+            My goal is to create useful systems that make work easier and
+            more organized.
+          </p>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
+          <a href="#about" className="learn-more-button">
+            Learn More About Me
+          </a>
         </div>
       </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      {/* ACTIVITY 2: TELL YOUR STORY */}
+      <section id="about" className="about-section">
+        <h2>About Me</h2>
+
+        <p>
+          I am an Information Systems student who is interested in technology
+          and understanding how digital systems can help people and
+          organizations.
+        </p>
+
+        <div className="about-content">
+          <article className="about-item">
+            <h3>My Background</h3>
+
+            <p>
+              My academic experiences have helped me improve my skills in
+              system analysis, documentation, web design, and project
+              development.
+            </p>
+          </article>
+
+          <article className="about-item">
+            <h3>Hobbies and Interests</h3>
+
+            <ul>
+              <li>Designing websites and prototypes</li>
+              <li>Learning about new technologies</li>
+              <li>Creating digital presentations</li>
+              <li>Listening to music</li>
+            </ul>
+          </article>
+
+          <article className="about-item">
+            <h3>My Goals</h3>
+
+            <p>
+              My goal is to improve my programming and design skills and
+              create systems that can solve real problems.
+            </p>
+          </article>
+        </div>
+      </section>
     </>
   )
 }
